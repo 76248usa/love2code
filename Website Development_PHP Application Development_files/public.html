@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:8888/jobboard/public/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>AppsByElsabe Jobboard</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./w3.css">
+
+<link href="./app.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./css">
+<link rel="stylesheet" href="./font-awesome.min.css">
+
+<link rel="stylesheet" href="./bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;
+font-weight: lighter;
+;}
+
+h3{
+  color: white;
+}
+body, html {
+    height: 100%;
+    color: #000;
+    line-height: 1.8;
+    
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("http://localhost:8888/jobboard/public/images/copy1 copy.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("http://localhost:8888/jobboard/public/images/copy1 copy.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://localhost:8888/jobboard/public/images/copy1 copy.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media  only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.btn-group {
+    text-align: center;
+}
+
+
+#myNavbar {
+  color: white;
+  font-size: 14px;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 60%;
+  font-size: 14px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+</style>
+
+</head><body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+
+
+
+                                    <a class="w3-bar-item w3-button w3-hide-small" href="http://localhost:8888/jobboard/public/login">LOGIN</a>
+                                <a class="w3-bar-item w3-button w3-hide-small" href="http://localhost:8888/jobboard/public/register">REGISTER</a>
+                            
+
+    
+  
+  </div>
+
+  <!-- Navbar on small screens -->
+  
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WHERE YOU FIND YOUR DREAM JOB</div>
+
+    <div class="wrapper text-center">
+      <div class="btn-group">
+      <a href="http://localhost:8888/jobboard/public/employer" class="btn btn-primary btn-lg">POST A JOB</a>
+      </div>
+    </div>
+
+ </div>
+
+ 
+</div>
+
+<!-- Container (About Section) -->
+<!-- <div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center">FIND THOUSANDS OF JOBS AND POST YOUR APPLICATION</h2>
+  <p class="w3-center"><em>Employers find your perfect candidate here. Through our alogorithms 
+  we bring you the best applicants.</em></p>
+  <br><br>
+    <div class="w3-center">
+    
+    </div>
+   
+
+
+  <div class="w3-row">
+
+
+
+    <! Hide this text on small devices -->
+    
+ <!--  </div>
+  
+</div> --> 
+
+<!-- Second Parallax Image with Portfolio Text -->
+<!-- <div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <h3><i>Fill out the application and land your dream job today!</i></h3>
+  </div>
+</div> -->
+
+
+<!-- Modal for full size images on click-->
+
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+
+<!-- Container (Contact Section) -->
+
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-64 w3-opacity w3-hover-opacity-off">
+ 
+  <div class="w3-large w3-section">
+
+
+<i class="fa fa-search" style="font-size:28px"></i>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for jobs for example, &#39;pharmacist&#39; or &#39;engineer&#39; " title="Type in a name">
+
+<br>
+<br>
+
+<h2 class="bg-success" id="result">
+
+</h2><table id="myTable">
+
+
+
+ <tbody><tr class="header">
+    <th style="width:20%;">Title</th>
+    <th style="width:20%;">Category</th>
+    <th style="width:20%;">Location</th>
+    <th style="width:20%;">Body</th>
+    <th style="width:20%;">Posted</th>
+  </tr>
+
+  
+  
+  <tr>
+    <td><a href="http://localhost:8888/jobboard/public/post/1">Middle school math</a></td>
+    <td>Uncategorized</td>
+    <td>Highland Park</td>
+    <td>Earn a Bachelor's...</td>
+    <td>5 days ago</td>
+  </tr>
+
+  
+  <tr>
+    <td><a href="http://localhost:8888/jobboard/public/post/3">Elementary Art</a></td>
+    <td>Uncategorized</td>
+    <td>Miller</td>
+    <td>The problem is th...</td>
+    <td>5 days ago</td>
+  </tr>
+
+  
+  <tr>
+    <td><a href="http://localhost:8888/jobboard/public/post/4">Theater Teacher</a></td>
+    <td>Middle School</td>
+    <td>Keller ISD</td>
+    <td>Route [post.edit] no...</td>
+    <td>2018 years ago</td>
+  </tr>
+
+  
+  
+</tbody></table>
+
+<script>
+
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+</div></footer></body></html>

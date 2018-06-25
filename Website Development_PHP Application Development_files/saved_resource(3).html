@@ -1,0 +1,73 @@
+
+<!-- saved from url=(0044)https://www.openprocessing.org/sketch/489794 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Sketch Iframe</title><!--<base href="/sketch/489794/files/">--><base href="."><link><link rel="stylesheet" href="./sketchIframe.css"><style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head><body><canvas id="pjs" tabindex="0" width="700" height="427" style="image-rendering: -webkit-optimize-contrast !important;"></canvas><script language="javascript" type="text/javascript" src="./jquery-1.11.1.min.js"></script><script src="./mousetrap.min.js"></script><script language="javascript" type="text/javascript" src="./processing-1.4.8.js"></script><script language="javascript" type="text/javascript" src="./attrchange.js"></script><script language="javascript" type="text/javascript" src="./iframe_giveFocus.js"></script><script language="javascript" type="text/javascript" src="./all_OPextension.js"></script><script language="javascript" type="text/javascript" src="./pjs_OPextension.js"></script><script id="pjsCode" type="application/processing">
+void setup() {
+ size(700, 427); 
+ background(204, 255, 255);
+  stroke(0,204,102);
+  fill(0, 204, 102);
+  
+  //curve(250, 250, 0, 340, 700, 250, 450, 380);
+  bezier(0, 420, 250, 380, 550, 220, 700, 420);
+  stroke(51, 255, 153);
+  fill(51, 255, 153);
+  bezier(0, 427, 350, 200, 240, 390, 700, 427);
+  
+  noStroke();
+  fill(355, 242, 0);
+  ellipse(230, 64, 100, 100);
+ 
+ strokeWeight(2);
+  stroke(0, 0, 0);
+  fill(0, 0, 0);
+   background(204, 255, 255);
+  stroke(0,204,102);
+  fill(0, 204, 102);
+  
+  //curve(250, 250, 0, 340, 700, 250, 450, 380);
+  bezier(0, 420, 250, 380, 550, 220, 700, 420);
+  stroke(51, 255, 153);
+  fill(51, 255, 153);
+  bezier(0, 427, 350, 200, 240, 390, 700, 427);
+  
+  noStroke();
+  fill(355, 242, 0);
+  ellipse(230, 64, 100, 100);
+  
+  fill(255, 255, 255);
+  ellipse(390, 90, 166, 127);
+  ellipse(308, 100, 95, 77);
+  ellipse(476, 100, 95, 77);
+ 
+ strokeWeight(2);
+  stroke(0, 0, 0);
+  fill(0, 0, 0);
+  
+   for (i = 0; i < 5; i++) {
+  line(0, 100+(i*50), width, 100+(i*50));
+  }
+  
+  
+}
+
+void draw(){
+
+  
+  
+  fill(0);
+  if (mousePressed) {
+    noStroke();
+    fill( random(100,255), random(100,255), random(100,255), 
+    random(100,255)); 
+    
+  ellipse(mouseX, mouseY, 40, 35);  
+    }
+
+
+
+
+}</script><span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span></body></html>

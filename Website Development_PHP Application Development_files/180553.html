@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.openprocessing.org/sketch/180553 -->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nonMember guest"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- META TAGS -->
+	<meta name="description" content="Rhythm pattern  - eighth and quarter notes.">
+	<meta property="fb:admins" content="844361">
+	<meta property="fb:app_id" content="113458952018100">
+	<meta property="og:url" content="https://www.openprocessing.org/sketch/180553">
+	<meta property="og:title" content="RhythmPatternsFirstSec - OpenProcessing">
+	<meta property="og:description" content="Rhythm pattern  - eighth and quarter notes.">
+	<meta property="og:image" content="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553@2x.jpg">
+	<meta property="og:image:secure_url" content="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553@2x.jpg">
+	<meta property="og:image:width" content="200">
+	<meta property="og:image:height" content="200">
+	<meta property="thumbnail" content="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553@2x.jpg">
+
+
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@openprocessing">
+	<meta name="twitter:title" content="RhythmPatternsFirstSec">
+	<meta name="twitter:description" content="Rhythm pattern  - eighth and quarter notes.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553@2x.jpg">
+
+	<!--
+      <PageMap>
+        <DataObject type="thumbnail">
+          <Attribute name="src" value="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553.jpg"/>
+          <Attribute name="width" value="100"/>
+          <Attribute name="height" value="100"/>
+        </DataObject>
+      </PageMap>
+	-->
+	<link rel="canonical" href="https://www.openprocessing.org/sketch/180553">
+	<link rel="alternate" type="application/json+oembed" href="https://www.openprocessing.org/api/oembed/?url=https%3A//www.openprocessing.org/sketch/180553&amp;format=json" title="RhythmPatternsFirstSec - OpenProcessing">
+	<link rel="alternate" type="application/xml+oembed" href="https://www.openprocessing.org/api/oembed/?url=https%3A//www.openprocessing.org/sketch/180553&amp;format=xml" title="RhythmPatternsFirstSec - OpenProcessing">
+	<title>
+		RhythmPatternsFirstSec - OpenProcessing</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densitydpi=device-dpi">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+
+<!-- generated from https://realfavicongenerator.net  -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.openprocessing.org/assets/img/logo/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.openprocessing.org/assets/img/logo/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.openprocessing.org/assets/img/logo/favicons/favicon-16x16.png">
+<link rel="manifest" href="https://www.openprocessing.org/assets/img/logo/favicons/manifest.json">
+<link rel="mask-icon" href="https://www.openprocessing.org/assets/img/logo/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://www.openprocessing.org/assets/img/logo/favicons/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/logo/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link href="./css(2)" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./bootstrap.min(1).css">
+<link rel="stylesheet" href="./openprocessing.css">
+
+<!--GA-->
+<script type="text/javascript" async="" src="./js(1)"></script><script async="" src="./analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-875534-5', {
+  'cookieDomain': 'none'
+});
+  ga('require', 'GTM-WX8BJLV'); //google optimize require
+  if(false){ 
+	  //if dashboard or user page, send specific pageview at the hitGA in user_view.js.
+  }else{
+ 	 ga('send', 'pageview', window.location.pathname + window.location.search);
+  }
+
+</script>
+
+		<link rel="stylesheet" href="./sketch_view.css">
+						<link rel="stylesheet" href="./codemirror.css">
+				<link rel="stylesheet" href="./neo.css">
+				<link rel="stylesheet" href="./foldgutter.css">
+				<link rel="stylesheet" href="./tippy.css">
+
+
+</head>
+
+<body class="hideInstructions hideSourceCode playMode">
+	<div class="navbar navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="row iconsRow">
+				<div id="websiteControls">
+					<div class="OPlogo icon" data-target=".opNavigation">
+	<a href="https://www.openprocessing.org/" id="OPlogoLight">
+		<img src="./logo_36x30_white.png">
+	</a>
+	<a href="https://www.openprocessing.org/" id="OPlogoDark">
+		<img src="./logo_36x30_dark.png">
+	</a>
+	<a href="https://www.openprocessing.org/" id="OPlogoColor">
+		<img src="./logo_36x30_color.png">
+	</a>
+</div>
+<ul id="navPath">
+	</ul>
+						<div class="sketchInfo">
+							<div class="sketchTitle">
+								RhythmPatternsFirstSec							</div>
+							<div class="sketchAuthor">by
+								<a href="https://www.openprocessing.org/user/44568">
+									Elzie Crous								</a>
+							</div>
+							<a href="https://www.openprocessing.org/user/44568" class="userThumbContainer  ">
+								<img src="./thumbnail" class="userThumb noUnveil" onerror="this.src=&#39;/assets/img/blank.png&#39;">
+								<div class="plus">
+								</div>
+							</a>
+
+						</div>
+				</div>
+
+				<div id="mainControls" class="">
+					<div class="icon icon_info " data-target="#infoPanel"></div>
+					<div class="icon icon_play icon_restart selected" data-target="#sketch"></div>
+					<div class="icon icon_code " data-target="#codePanel"></div>
+				</div>
+				<div id="sideWrapper">
+					<div id="shareButtons" class="text-center pull-right flip hidden-xs">
+						<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.openprocessing.org/sketch/180553">
+							<span class="icon icon_facebook_white"></span>
+						</a>
+						<a target="_blank" href="https://twitter.com/home?status=Here%20is%20an%20awesome%20sketch%3A%0Ahttps%3A//www.openprocessing.org/sketch/180553">
+							<span class="icon icon_twitter_white"></span>
+						</a>
+						<a id="shareButtons_embed" href="https://www.openprocessing.org/sketch/180553#">
+							<span class="icon icon_embed_circle_white"></span>
+						</a>
+					</div>
+					<div id="sideButtons" class="text-right pull-right">
+						<button id="forkSketchButton" class="btn btn-default hidden-xs" data-normal-text="Save as Fork" data-target="#editSketchPanel">Save as Fork</button>
+						<button id="saveSketchButton" class="btn btn-primary" data-loading-text="Saving.." data-success-text="Saved" data-normal-text="Save" data-fork-text="Save as Fork" data-save-text="Save" data-submit-text="Submit" data-target="#editSketchPanel">Save</button>
+
+					</div>
+					<div id="sideControls" class="text-right pull-right">
+						<div class="metricGroup">
+							<div class="icon icon_heart"></div>
+							<div class="icon icon_arrowToHeart"></div>
+							<div class="metric" data-target="#heartSidePanel">
+								0							</div>
+						</div>
+						<div class="metricGroup hidden-xs">
+							<div class="icon icon_comment" data-target="#commentSidePanel"></div>
+							<div class="metric" data-target="#commentSidePanel">
+								0							</div>
+						</div>
+
+						<div class="metricGroup hidden-xs">
+							<div class="icon icon_fork" data-target="#forkSidePanel"></div>
+							<div id="forkCount" class="metric" data-target="#forkSidePanel">
+							</div>
+						</div>
+
+						<div class="metricGroup hidden-xs">
+							<div class="icon icon_share white" data-target="#shareSidePanel"></div>
+							<div class="metric hide" data-target="#shareSidePanel">
+							</div>
+						</div>
+
+					</div>
+					<div id="embedPageLink" class="text-right pull-right">
+						<a target="_blank" href="https://www.openprocessing.org/sketch/180553">Edit on OpenProcessing</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="opNavigation navigationContent">
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="https://www.openprocessing.org/">
+				<h1 class="bariol">OpenProcessing</h1>
+			</a>
+			<div class="visible-xs icon icon_close white"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="navColumn col-xs-6 col-sm-2 hideIfSignedin">
+			<h3 class="bariol">
+				<a href="https://www.openprocessing.org/home/join">Get Started</a>
+			</h3>
+			<p>
+				<a href="https://www.openprocessing.org/home/join">Join and Start Coding</a>
+			</p>
+			<p>
+				<a href="https://www.openprocessing.org/home/signin">Sign in</a>
+			</p>
+			<p>
+				<a href="https://www.openprocessing.org/membership/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;promo&#39;, &#39;click&#39;, &#39;navigation&gt;be_a_plus&#39;);">Be a Plus+ Member</a>
+			</p>
+		</div>
+		<div class="navColumn col-xs-6 col-sm-2 hideIfGuest">
+			<h3 class="bariol">
+				<a name="mySketchesLink" href="https://www.openprocessing.org/user/0/#sketches">My Sketches</a>
+			</h3>
+			<p>
+				<a name="myFeedLink" href="https://www.openprocessing.org/user/0/#activity">My Feed</a>
+			</p>
+			<p>
+				<a name="myProfileLink" id="navbarUserEditLink" href="https://www.openprocessing.org/user/0/#edit">Edit Profile</a>
+			</p>
+			<p class="hideIfNonMember">
+				<a href="https://www.openprocessing.org/membership/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;promo&#39;, &#39;click&#39;, &#39;navigation&gt;plus_membership&#39;);">Plus+ Membership</a>
+			</p>
+			<p class="hideIfMember">
+				<a href="https://www.openprocessing.org/membership/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;promo&#39;, &#39;click&#39;, &#39;navigation&gt;get_plus_membership&#39;);">Get Plus+ Membership</a>
+			</p>
+			<p>
+				<a href="https://www.openprocessing.org/home/signout">Sign out</a>
+			</p>
+		</div>
+		<div class="navColumn col-xs-6 col-sm-3">
+			<h3 class="bariol">
+				<a href="https://www.openprocessing.org/classes/">Classes</a>
+			</h3>
+						<p class="hideIfNonMember">
+				<a href="https://www.openprocessing.org/class/create">Create a Class</a>
+			</p>
+			<p class="grey hideIfSignedin">Join 1000+ professors teaching creative coding using OpenProcessing.</p>
+			<p class="hideIfMember">
+				<a href="https://www.openprocessing.org/classes/">Create a Class</a>
+			</p>
+			<p>
+				<a href="https://www.openprocessing.org/classes/all">View All Classes</a>
+			</p>
+		</div>
+		<div class="navColumn col-xs-12 col-sm-offset-1 col-sm-6 searchForm">
+			<h3 class="bariol">
+				<form action="https://www.openprocessing.org/browse/?q=test&amp;time=thisMonth&amp;type=all">
+					<input name="q" class="specialType" type="text" placeholder="Search" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false" value="">
+					<button type="submit" class="icon icon_arrow_circle_right pull-right"></button>
+					<input type="hidden" name="time" value="anytime">
+					<input type="hidden" name="type" value="all">
+				</form>
+			</h3>
+			<div class="tags">
+				<div class="tagGroup">
+					/
+					<a href="https://www.openprocessing.org/browse/" data-q="" data-time="thisMonth" data-type="hearts">Recent
+						<span class="icon icon_heart_arrow"></span>s</a> /
+					<a href="https://www.openprocessing.org/browse/" data-q="" data-time="anytime" data-type="all">Browse All</a>
+				</div>
+
+
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="physics" data-time="anytime" data-type="tags">physics</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="game" data-time="anytime" data-type="tags">game</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="visualization" data-time="anytime" data-type="tags">visualization</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="particles" data-time="anytime" data-type="tags">particles</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="color" data-time="anytime" data-type="tags">color</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="evolution" data-time="anytime" data-type="tags">evolution</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="circle" data-time="anytime" data-type="tags">circle</a>
+				<a href="https://www.openprocessing.org/sketch/180553#" data-q="lines" data-time="anytime" data-type="tags">lines</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="row navigationFooter">
+			<div class="col-xs-12">
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+								<a href="mailto:info@openprocessing.org">
+					<img class="icon" src="./icon_email@2x.png" alt="Email"> info@openprocessing.org</a>
+								<a href="https://twitter.com/openprocessing" target="_blank">
+					<img src="./icon_twitter@2x.png" alt="Follow OpenProcessing on Twitter"> Twitter</a>
+
+			</div>
+			<div class="col-xs-12 col-sm-8  text-right text-right-not-xs">
+								<a href="https://www.openprocessing.org/home/credits">Credits</a>
+				<a href="https://www.openprocessing.org/home/comg">Community Guidelines</a>
+				<a href="https://www.openprocessing.org/home/tos">Terms of Service</a>
+				<a href="https://www.openprocessing.org/home/prp">Privacy Policy</a>
+			</div>
+
+		</div>
+
+
+</div>		</div>
+	</div>
+
+	<div id="sketch" class="active" style="background-color: rgb(175, 238, 238);"><iframe class="" style="width: 800px; height: 600px; max-width: none; transform: translateY(-50%) scale(0.6825); transform-origin: left center 0px;" src="./saved_resource(1).html"></iframe></div>
+	<div id="recordContainer" class="container-fluid">
+		<div id="gifActions" class="row">
+			<div class="col-xs-12 text-center">
+				<div id="recordButton" class="icon icon_record"></div>
+				<p>Click record or press 'R'
+					<br>to start/stop recording (max. 10 secs)</p>
+			</div>
+		</div>
+		<div id="screenshotActions" class="row">
+			<div class="col-xs-12 text-center">
+				<div id="takeScreenshotButton" class="icon icon_capture"></div>
+				<p>Click capture or press 'R'
+					<br>to take a screenshot</p>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="infoPanel" class="panel inactive">
+		<div class="bg"></div>
+		<div class="container">
+			
+			<div class="row">
+				<h1 class="sketchTitle specialType col-xs-12 text-center-xs col-sm-6 text-right-sm text-right-md text-right-lg" name="title" label="title">
+					RhythmPatternsFirstSec				</h1>
+			</div>
+			<div class="row">
+				<div class="col-xs-offset-2 col-xs-10 col-sm-offset-6 col-sm-6">
+					<img class="separator hidden-xs" src="./titleSeparatorLine@2x.png">
+					<div class="by landscape row">
+						<div class="tableCell col-xs-6  col-sm-offset-0 col-sm-3">
+							<a href="https://www.openprocessing.org/user/44568" class="userThumbContainer   ">
+    <img src="./blank.png" class="ratioKeeper">
+    <img src="./blank.png" data-src="/user/44568/thumbnail" class="userThumb  hideUntilLoaded">
+    <div class="plus"><img src="./blank.png" class="ratioKeeper"></div>
+</a>
+						</div>
+						<div class="tableCell col-xs-6 col-sm-9">
+							<div class="byText">
+								by
+								<div class="fullname bariol text-left" name="fullname" label="name">
+									<a href="https://www.openprocessing.org/user/44568">
+										Elzie<br>Crous									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+								<div class="row descriptionData">
+
+						<div class="description col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6" name="description" label="description">
+							Rhythm pattern  - eighth and quarter notes.						</div>
+						
+						<ul class="metadata col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+							<hr>
+							<div class="">
+								<li class="col-xs-4 date">
+									January 11th, 2015								</li>
+								
+																																												
+
+														<li class="col-xs-12 license" name="license" label="license">
+															<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank">
+																Creative Commons Attribution ShareAlike															</a>
+														</li>
+							</div>
+
+
+
+
+						</ul>
+					</div>
+		</div>
+	</div>
+	<div id="editSketchPanel" class="panel inactive OPLiveForm">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-3 col-lg-offset-1 col-lg-2 text-center">
+					<div id="screenshotContainer">
+						<img src="./blank.png" class="ratioKeeper">
+						<div id="screenshot" class="sketchThumb hideUntilLoaded"></div>
+						<div id="takeScreenshotIcon" class="icon icon_camera"></div>
+					</div>
+					<input name="sketchThumb" type="hidden" value="">
+					<input name="codeObjects" type="hidden">
+					<input name="mode" type="hidden" value="1">
+					<input type="hidden" name="visualID" value="180553">
+					<input type="hidden" name="saveAsNew" value="false">
+					<input type="hidden" name="parentID" value="">
+					<input type="hidden" name="imports" value="">
+					<input type="hidden" name="customLibraries" value="">
+					<input type="hidden" name="restoredVersion" value="false">
+					<input type="hidden" name="engineID" value="10">
+				</div>
+				<div class="col-xs-12 col-sm-9 col-lg-8">
+
+					<div class="row">
+						<formitem class="col-xs-12">
+							<label>title</label>
+							<h1 class="sketchTitle editable bariol" spellcheck="false" name="title">RhythmPatternsFirstSec</h1>
+						</formitem>
+					</div>
+					<div class="row">
+						<formitem class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+							<label>description</label>
+							<div class="editable" name="description">Rhythm pattern  - eighth and quarter notes.</div>
+						</formitem>
+					</div>
+					<div class="row">
+						<formitem class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+							<label>How to
+								<br>interact with it</label>
+							<div class="editable" name="instructions"></div>
+							<div class="description">eg. "mouse, keyboard"</div>
+						</formitem>
+					</div>
+
+					<div class="row">
+						<formitem class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Tags</label>
+							<input type="text" class="tags field" name="tags" label="tags" description="use commas" value="">
+							<div class="description">eg. "visualization, fractal, mouse"</div>
+
+						</formitem>
+						<formitem class="license col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>License</label>
+							<input type="hidden" name="license" value="by-sa">
+							<div class="dropup field plusOnly">
+								<a class="dropdown-toggle" type="button" id="licenseDropDown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Attribution ShareAlike								</a>
+								<ul id="licenseDropdown" class="dropdown-menu" aria-labelledby="licenseDropDown2">
+									<li value="none">No Creative Commons License</li>
+									<li value="by">Attribution</li>
+									<li value="by-sa" class="selected">Attribution Share Alike</li>
+									<li value="by-nd">Attribution No Derivatives</li>
+									<li value="by-nc">Attribution Non-Commercial</li>
+									<li value="by-nc-sa">Attribution Non-Commercial Share Alike</li>
+									<li value="by-nc-nd">Attribution Non-Commercial No Derivatives</li>
+								</ul>
+							</div>
+							<div class="description">learn more about
+								<a href="https://creativecommons.org/licenses/" target="_blank">Creative Commons</a>
+							</div>
+
+						</formitem>
+
+
+					</div>
+					<div class="row">
+						<formitem class=" col-xs-6  col-sm-4 col-md-4 col-lg-4">
+							<div class="draft toggleable " name="draft" label="Draft"></div>
+							<div class="description">won't be published on feeds but still accessible on your profile</div>
+						</formitem>
+
+													<formitem class="col-xs-6  col-sm-4 col-md-4 col-lg-4">
+								<label>Who can see it?</label>
+								<input type="hidden" name="isPrivate" value="0">
+								<div class="dropup field plusOnly">
+									<a class="dropdown-toggle" type="button" id="privacyDropdownSelected" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Anyone									</a>
+									<ul id="privacyDropdown" class="dropdown-menu" aria-labelledby="privacyDropdownSelected">
+										<li value="0" description="" class="selected">
+											Anyone										</li>
+										<li value="1" description="">
+											Only Me										</li>
+										<li value="2" description="">
+											Me &amp; My Classes										</li>
+									</ul>
+								</div>
+								<div class="description"></div>
+								<!-- <div class="private toggleable plusOnly " name='private' label="Private"></div>
+                        <div class="description">won't be accessible by anyone</div> -->
+							</formitem>
+
+
+							<formitem class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+								<div class="hideSourceCode plusOnly toggleable selected" name="hideSourceCode" label="Hide Source Code"></div>
+								<div class="description">source code won't be available on the page, however it will still be accessible via browser console</div>
+							</formitem>
+					</div>
+					<div class="row">
+						<div class=" col-xs-12 col-md-12 col-lg-12">
+							<p>
+								<br>
+								<a id="deleteSketchLink" href="https://www.openprocessing.org/sketch/180553#">Delete Sketch?</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="codePanel" class="panel inactive container">
+		<div class="row">
+			<div id="codeTabs" class="col-xs-12">
+				<ul>
+
+				<li class="selected">RhythmPatternsFirstSec<div class="icon icon_x_small_dark tabCloseButton"></div></li></ul>
+				<div id="addCodeButton" class="icon icon_plus_circle_dark"></div>
+			</div>
+			<div class="hiddenCodeContainer col-xs-12">
+				<p>
+					<img src="./icon_hiddenCode.png">
+				</p>
+				<p>As a
+					<a href="https://www.openprocessing.org/membership/" target="_blank">Plus+ Member</a> feature, this source code is hidden by the owner.</p>
+			</div>
+			<div class="codeContainer col-xs-12">
+
+			<div class="codePane selected"><textarea class="col-md-12 code" autocorrect="off" autocapitalize="off" spellcheck="false" style="display: none;">float z = 800;
+float x = 0;
+float xx = -100;
+float xxx = -200;
+float xxxx = -300;
+float a = -400; 
+float b = -500;
+float c = -600;
+float d = -650;
+float e = -700;
+float eaa = -750;
+float aa = -800; 
+float bb = -900;
+float cc = -1000;
+float dd = -1050;
+float ee = -1100;
+float eef = -1150;
+float f = -1200;
+float g = -1300;
+float h = -1350;
+float i = -1400;
+float j = -1500;
+float jff = -1550;
+ 
+float ff = -1600;
+float gg = -1700;
+float hh = -1750;
+float ii = -1800;
+float jj = -1900;
+float jk = -1950;
+
+float k = -2000;
+float l = -2050;
+float m = -2100;
+float n = -2200;
+float o = -2250;
+float p = -2300;
+float pk = -2350;
+float kk = -2400;
+float ll = -2450;
+float mm = -2500;
+float nn = -2600;
+float oo = -2650;
+float pp = -2700;
+float ppq = -2750;
+float q = -2800;
+float r = -2850;
+float s = -2900;
+float t = -2950;
+float u = -3000;
+float uqq = -3100;
+float qq = -3200;
+float rr = -3250;
+float ss = -3300;
+float tt = -3350;
+float uu = -3400;
+float uuu = -3500;
+float uuuu = -3505;
+
+float r1 = 25;
+float r2 = 25; 
+float r3 = 25;
+float r4 = 25;
+float r5 = 25;
+float r6 = 25;
+float r7 = 25; 
+float r8 = 25;
+float r9 = 25;
+float r10 = 25;
+
+float r11 = 25;
+float r12 = 25; 
+float r13 = 25;
+float r14 = 25;
+float r15 = 25;
+float r16 = 25;
+float r17 = 25; 
+float r18 = 25;
+float r19 = 25;
+float r20 = 25;
+
+float r21 = 25;
+float r22 = 25; 
+float r23 = 25;
+float r24 = 25;
+float r25 = 25;
+float r26 = 25;
+float r27 = 25; 
+float r28 = 25;
+float r29 = 25;
+float r30 = 25;
+float r31 = 25;
+float r32 = 25;
+
+float r31 = 25;
+float r32 = 25; 
+float r33 = 25;
+float r34 = 25;
+float r35 = 25;
+float r36 = 25;
+float r37 = 25; 
+float r38 = 25;
+float r39 = 25;
+float r40 = 25;
+float r41 = 25;
+float r42 = 25;
+
+void setup() {
+  size(800, 600);
+}
+
+void draw() {
+  background(175, 238, 238);
+  fill(0, 153,0);
+  noStroke();
+  rect(z, 50, 100, 50);
+  rect(z + 50, 20, 50, 30);
+  fill(255, 255, 51);
+  rect (280, 450, 140, 100);
+  fill(255, 0, 0);
+  triangle(350, 350, 250, 450, 450, 450);
+  fill(255);
+  strokeWeight(3);
+  stroke(0);
+  rect(300, 460, 30, 30);
+  noStroke();
+  fill(0);
+  ellipse(z +20, 110, 20, 20);
+  ellipse(z+80, 110, 20, 20);
+  ellipse(z+144, 110, 20, 20);
+  ellipse (z+204, 110, 20, 20);
+  ellipse (z+254, 110, 20, 20);
+  ellipse (z+314, 110, 20, 20);
+  fill(255);
+  rect(z+70, 30, 20, 20);
+  if (z == -50) {
+    z = 800;
+  }
+  fill(255, 255, 51);
+  rect(z+120, 50, 100, 50);
+  fill(255,0,0);
+  rect (z+240, 50, 100,50);
+  textFont(createFont("cursive"));
+  textSize(45);
+  fill(0);
+  text("1",x, 250);
+  text("2", xx, 250);
+  text("3", xxx, 250);
+  text("4", xxxx, 250);
+  strokeWeight(1);
+ stroke(0); 
+ellipse(a, 250, r1, r1);
+ellipse(b, 250, r2, r2);
+ellipse(c, 250, r3, r3);
+ellipse(d, 250, r4, r4);
+ellipse(e,250, r5, r5);
+line(a+12.5, 250, a+12.5, 190);
+line(b+12.5, 250, b+12.5, 190);
+line(c+12.5, 250, c+12.5, 190);
+line(d+12.5, 250, d+12.5, 190);
+line(c+12.5, 190, d+12.5, 190);
+line(e+12.5, 250, e+12.5, 190);
+
+
+ellipse(aa, 250, r6, r6);
+ellipse(bb, 250, r7, r7);
+ellipse(cc, 250, r8, r8);
+ellipse(dd, 250, r9, r9);
+ellipse(ee,250, r10, r10);
+line(aa+12.5, 250, aa+12.5, 190);
+line(bb+12.5, 250, bb+12.5, 190);
+line(cc+12.5, 250, cc+12.5, 190);
+line(dd+12.5, 250, dd+12.5, 190);
+line(cc+12.5, 190, dd+12.5, 190);
+line(ee+12.5, 250, ee+12.5, 190);
+stroke(255,0,0);
+fill(255, 0, 0);
+ellipse(f, 250, r11, r11);
+ellipse(g, 250, r12, r12);
+ellipse(h, 250, r13, r13);
+ellipse(i, 250, r14, r14);
+ellipse(j,250, r15, r15);
+line(f+12.5, 250, f+12.5, 190);
+line(g+12.5, 250, g+12.5, 190);
+line(h+12.5, 250, h+12.5, 190);
+line(g+12.5, 190, h+12.5, 190);
+line(i+12.5, 250, i+12.5, 190);
+line(j+12.5, 250, j+12.5, 190);
+
+ellipse(ff, 250, r16, r16);
+ellipse(gg, 250, r17, r17);
+ellipse(hh, 250, r18, r18);
+ellipse(ii, 250, r19, r19);
+ellipse(jj,250, r20, r20);
+line(ff+12.5, 250, ff+12.5, 190);
+line(gg+12.5, 250, gg+12.5, 190);
+line(hh+12.5, 250, hh+12.5, 190);
+line(gg+12.5, 190, hh+12.5, 190);
+line(ii+12.5, 250, ii+12.5, 190);
+line(jj+12.5, 250, jj+12.5, 190);
+fill(0, 0, 205);
+stroke(0, 0, 205);
+ellipse(k, 250, r21, r21);
+ellipse(l, 250, r22, r22);
+ellipse(m, 250, r23, r23);
+ellipse(n, 250, r24, r24);
+ellipse(o,250, r25, r25);
+ellipse(p, 250, r42, r42);
+ellipse(kk, 250, r26, r26);
+ellipse(ll, 250, r27, r27);
+ellipse(mm, 250, r28, r28);
+ellipse(nn, 250, r29, r29);
+ellipse(oo,250, r30, r30);
+ellipse(pp, 250, r41, r41);
+line(k+12.5, 250, k+12.5, 190);
+line(l+12.5, 250, l+12.5, 190);
+line(l+12.5, 190, k+12.5,190);
+line(m+12.5, 250, m+12.5, 190);
+line(n+12.5, 250, n+12.5, 190);
+line(o+12.5, 250, o+12.5, 190);
+line(n+12.5, 190, o+12.5, 190);
+line(p+12.5, 250, p+12.5, 190);
+line(kk+12.5, 250, kk+12.5, 190);
+line(ll+12.5, 250, ll+12.5, 190);
+line(kk+12.5, 190, ll+12.5, 190);
+line(mm+12.5, 250, mm+12.5, 190);
+line(nn+12.5, 250, nn+12.5, 190);
+line(oo+12.5, 250, oo+12.5, 190);
+line(nn+12.5, 190, oo+12.5, 190);
+line(pp+12.5, 250, pp+12.5, 190);
+fill(76, 0, 153);
+stroke(76, 0, 153);
+ellipse(q, 250, r31, r31);
+ellipse(r, 250, r32, r32);
+ellipse(s, 250, r33, r33);
+ellipse(t, 250, r34, r34);
+noFill();
+strokeWeight(4);
+ellipse(u,250, r35, r35);
+fill(76, 0, 153);
+ellipse(qq, 250, r36, r36);
+ellipse(rr, 250, r37, r37);
+ellipse(ss, 250, r38, r38);
+ellipse(tt, 250, r39, r39);
+noFill();
+strokeWeight(4);
+ellipse(uu,250, r40, r40);
+strokeWeight(1);
+line(q+12.5, 250, q+12.5, 190);
+line(r+12.5, 250, r+12.5, 190);
+line(q+12.5, 190, r+12.5, 190);
+line(s+12.5, 250, s+12.5, 190);
+line(t+12.5, 250, t+12.5, 190);
+line(s+12.5, 190, t+12.5, 190);
+line(u+12.5, 250, u+12.5, 190);
+line(qq+12.5, 250, qq+12.5, 190);
+line(rr+12.5, 250, rr+12.5, 190);
+line(qq+12.5, 190, rr+12.5, 190);
+line(ss+12.5, 250, ss+12.5, 190);
+line(tt+12.5, 250, tt+12.5, 190);
+line(ss+12.5, 190, tt+12.5, 190);
+line(uu+12.5, 250, uu+12.5, 190);
+strokeWeight(.5);
+line(eaa, 255, eaa, 185);
+line(eef, 255, eef, 185);
+line(jff, 255, jff, 185);
+line(jk, 255, jk, 185);
+line(pk, 255, pk, 185);
+line(uqq, 255, uqq, 185);
+line(uuu, 255, uuu, 185);
+line(uuuu, 255, uuuu, 185);
+line(ppq, 255, ppq, 185);
+uuuu = uuuu+2;
+uuu = uuu+2;
+uqq = uqq+2;
+ppq = ppq+2;
+z = z-1;
+pk = pk+2;
+ jk = jk+2;
+ jff = jff+2;
+ eef = eef+2;
+  eaa = eaa+2;
+  x = x+2;
+  xx = xx + 2;
+  xxx = xxx + 2;
+  xxxx = xxxx + 2;
+  a = a+2;
+  b = b+2;
+  c = c+2;
+  d = d+2;
+  e = e+2;
+  
+  aa = aa+2;
+  bb = bb+2;
+  cc = cc+2;
+  dd = dd+2;
+  ee = ee+2;
+  f = f+2;
+  g = g+2;
+  h = h+2;
+  i = i+2;
+  j = j+2;
+  
+  ff = ff+2;
+  gg = gg+2;
+  hh = hh+2;
+  ii = ii+2;
+  jj = jj+2;
+  
+  k = k+2;
+  l = l+2;
+  m = m+2;
+  n = n+2;
+  o = o+2;
+  p = p+2;
+  
+  kk = kk+2;
+  ll = ll+2;
+  mm = mm+2;
+  nn = nn+2;
+  oo = oo+2;
+  pp = pp+2;
+  
+  q = q+2;
+  r = r+2;
+  s = s+2;
+  t = t+2;
+  u = u+2;
+  qq = qq+2;
+  rr = rr+2;
+  ss = ss+2;
+  tt = tt+2;
+  uu = uu+2;
+
+  if (a == 300) {
+    r1 = r1*1.5;
+  }
+  
+  if (a == 330) {
+    r1 = 25;
+  }
+   if (b == 300) {
+    r2 = r2*1.5;
+  }
+  
+  if (b == 330) {
+    r2 = 25;
+  }
+   if (c == 300) {
+    r3 = r3*1.5;
+  }
+  
+  if (c == 330) {
+    r3 = 25;
+  }
+   if (d == 300) {
+    r4 = r4*1.5;
+  }
+  
+  if (d == 330) {
+    r4 = 25;
+  }
+  if (e == 300) {
+    r5 = r5*1.5;
+  }
+  
+  if (e == 330) {
+    r5 = 25;
+  }
+  
+  if (aa == 300) {
+    r6 = r6*1.5;
+  }
+  
+  if (aa == 330) {
+    r6 = 25;
+  }
+   if (bb == 300) {
+    r7 = r7*1.5;
+  }
+  
+  if (bb == 330) {
+    r7 = 25;
+  }
+   if (cc == 300) {
+    r8 = r8*1.5;
+  }
+  
+  if (cc == 330) {
+    r8 = 25;
+  }
+   if (dd == 300) {
+    r9 = r9*1.5;
+  }
+  
+  if (dd == 330) {
+    r9 = 25;
+  }
+  if (ee == 300) {
+    r10 = r10*1.5;
+  }
+  
+  if (ee == 330) {
+    r10 = 25;
+  }
+  
+  if (f == 300) {
+    r11 = r11*1.5;
+  }
+  
+  if (f == 330) {
+    r11 = 25;
+  }
+   if (g == 300) {
+    r12 = r12*1.5;
+  }
+  
+  if (g == 330) {
+    r12 = 25;
+  }
+   if (h == 300) {
+    r13 = r13*1.5;
+  }
+  
+  if (h == 330) {
+    r13 = 25;
+  }
+   if (i == 300) {
+    r14 = r14*1.5;
+  }
+  
+  if (i == 330) {
+    r14 = 25;
+  }
+  if (j == 300) {
+    r15 = r15*1.5;
+  }
+  
+  if (j == 330) {
+    r15 = 25;
+  }
+  
+  if (ff == 300) {
+    r16 = r16*1.5;
+  }
+  
+  if (ff == 330) {
+    r16 = 25;
+  }
+   if (gg == 300) {
+    r17 = r17*1.5;
+  }
+  
+  if (gg == 330) {
+    r17 = 25;
+  }
+   if (hh == 300) {
+    r18 = r18*1.5;
+  }
+  
+  if (hh == 330) {
+    r18 = 25;
+  }
+   if (ii == 300) {
+    r19 = r19*1.5;
+  }
+  
+  if (ii == 330) {
+    r19 = 25;
+  }
+  if (jj == 300) {
+    r20 = r20*1.5;
+  }
+  
+  if (jj == 330) {
+    r20 = 25;
+  }
+  
+  if (k == 300) {
+    r21 = r21*1.5;
+  }
+  
+  if (k == 330) {
+    r21 = 25;
+  }
+   if (l == 300) {
+    r22 = r22*1.5;
+  }
+  
+  if (l == 330) {
+    r22 = 25;
+  }
+   if (m == 300) {
+    r23 = r23*1.5;
+  }
+  
+  if (m == 330) {
+    r23 = 25;
+  }
+   if (n == 300) {
+    r24 = r24*1.5;
+  }
+  
+  if (n == 330) {
+    r24 = 25;
+  }
+  if (o == 300) {
+    r25 = r25*1.5;
+  }
+  
+  if (o == 330) {
+    r25 = 25;
+  }
+  if (p == 300) {
+    r42 = r42*1.5;
+  }
+  
+  if (p == 330) {
+    r42 = 25;
+  }
+  
+  if (kk == 300) {
+    r26 = r26*1.5;
+  }
+  
+  if (kk == 330) {
+    r26 = 25;
+  }
+   if (ll == 300) {
+    r27 = r27*1.5;
+  }
+  
+  if (ll == 330) {
+    r27 = 25;
+  }
+   if (mm == 300) {
+    r28 = r28*1.5;
+  }
+  
+  if (mm == 330) {
+    r28 = 25;
+  }
+   if (nn == 300) {
+    r29 = r29*1.5;
+  }
+  
+  if (nn == 330) {
+    r29 = 25;
+  }
+  if (oo == 300) {
+    r30 = r30*1.5;
+  }
+  
+  if (oo == 330) {
+    r30 = 25;
+  }
+  if (pp == 300) {
+    r41 = r41*1.5;
+  }
+  
+  if (pp == 330) {
+    r41 = 25;
+  }
+  if (q == 300) {
+    r31 = r31*1.5;
+  }
+  
+  if (q == 330) {
+    r31 = 25;
+  }
+   if (r == 300) {
+    r32 = r32*1.5;
+  }
+  
+  if (r == 330) {
+    r32 = 25;
+  }
+   if (s == 300) {
+    r33 = r33*1.5;
+  }
+  
+  if (s == 330) {
+    r33 = 25;
+  }
+  if (t == 300) {
+    r34 = r34*1.5;
+  }
+  
+  if (t == 330) {
+    r34 = 25;
+  }
+  if (u == 300) {
+    r35 = r35*1.5;
+  }
+  
+  if (u == 380) {
+    r35 = 25;
+  }
+  if (qq == 300) {
+    r36 = r36*1.5;
+  }
+  
+  if (qq == 330) {
+    r36 = 25;
+  }
+   if (rr == 300) {
+    r37 = r37*1.5;
+  }
+  
+  if (rr == 330) {
+    r37 = 25;
+  }
+   if (ss == 300) {
+    r38 = r38*1.5;
+  }
+  
+  if (ss == 330) {
+    r38 = 25;
+  }
+  if (tt == 300) {
+    r39 = r39*1.5;
+  }
+  
+  if (tt == 330) {
+    r39 = 25;
+  }
+  if (uu == 300) {
+    r40 = r40*1.5;
+  }
+  
+  if (uu == 380) {
+    r40 = 25;
+  }
+  
+  if(mousePressed) {
+ z = 800;
+ x = 0;
+ xx = -100;
+ xxx = -200;
+ xxxx = -300;
+ a = -400; 
+ b = -500;
+ c = -600;
+ d = -650;
+ e = -700;
+ eaa = -750;
+ aa = -800; 
+ bb = -900;
+ cc = -1000;
+ dd = -1050;
+ee = -1100;
+ eef = -1150;
+ f = -1200;
+ g = -1300;
+ h = -1350;
+ i = -1400;
+ j = -1500;
+ jff = -1550;
+ 
+ ff = -1600;
+ gg = -1700;
+ hh = -1750;
+ ii = -1800;
+ jj = -1900;
+ jk = -1950;
+
+ k = -2000;
+ l = -2050;
+ m = -2100;
+ n = -2200;
+ o = -2250;
+ p = -2300;
+ pk = -2350;
+ kk = -2400;
+ ll = -2450;
+ mm = -2500;
+ nn = -2600;
+ oo = -2650;
+ pp = -2700;
+ ppq = -2750;
+ q = -2800;
+ r = -2850;
+ s = -2900;
+ t = -2950;
+ u = -3000;
+ uqq = -3100;
+ qq = -3200;
+ rr = -3250;
+ ss = -3300;
+ tt = -3350;
+ uu = -3400;
+ uuu = -3500;
+ uuuu = -3505;
+  }
+  
+}</textarea><div class="CodeMirror cm-s-neo"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure">AخA</div><div class="CodeMirror-measure"><pre class="CodeMirror-line"><span style="padding-right: 0.1px;">  <span class="cm-variable">triangle</span>(<span class="cm-number">350</span>, <span class="cm-number">350</span>, <span class="cm-number">250</span>, <span class="cm-number">450</span>, <span class="cm-number">450</span>, <span class="cm-number">450</span>);</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code"></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-foldgutter"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div></div>
+			<div class="codeOptions hidden-xs">
+				<div class="icon icon_edit_dark"></div>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="https://www.openprocessing.org/sketch/180553#codeSettings" aria-controls="codeSettings" role="tab" data-toggle="tab">Settings</a>
+					</li>
+					<li role="presentation">
+						<a id="filesLink" href="https://www.openprocessing.org/sketch/180553#sketchFiles" aria-controls="sketchFiles" role="tab" data-toggle="tab">Files</a>
+					</li>
+					
+					<li role="presentation" class="hide">
+						<a href="https://www.openprocessing.org/sketch/180553#codeReference" aria-controls="codeReference" role="tab" data-toggle="tab">Reference</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="codeSettings">
+						<div id="sketchModeOptions" class="radioGroup row">
+							<settinglabel class="col-xs-3">Mode</settinglabel>
+							<settingoptions class="col-xs-9 text-right">
+																	<input type="radio" name="sketchMode" id="sketchModeOption2" value="2" autocomplete="off" checked="">
+									<label class="radioLabel" for="sketchModeOption2">P5js
+									</label>
+									<input type="radio" name="sketchMode" id="sketchModeOption1" value="1" autocomplete="off">
+									<label class="radioLabel" for="sketchModeOption1">Processing.js
+									</label>
+																</settingoptions>
+							<settinglabel class="col-xs-6">&nbsp;</settinglabel>
+							<settingoptions class="col-xs-6 text-right">
+								<ul id="libraryIDDropdown" class="passiveDropdown">
+								<li value="10" class="selected">v1.4.8</li></ul>
+							</settingoptions>
+						</div>
+						<div id="tabModeOptions" class="radioGroup row">
+							<settinglabel class="col-xs-3">Tabs</settinglabel>
+							<settingoptions class="col-xs-9 text-right">
+								<input type="radio" name="tabMode" id="tabMode1" value="true" autocomplete="off">
+								<label for="tabMode1">
+									Show
+								</label>
+								<input type="radio" name="tabMode" id="tabMode2" value="false" autocomplete="off" checked="">
+								<label for="tabMode2">
+									Hide
+								</label>
+							</settingoptions>
+						</div>
+
+						<div id="libraryHeader" class="radioGroup row hide">
+							<settinglabel class="col-xs-4">Libraries</settinglabel>
+							<settingoptions class="col-xs-8 text-right">
+								<a href="https://www.openprocessing.org/sketch/180553#" data-value="true">Show All</a>
+								<a href="https://www.openprocessing.org/sketch/180553#" class="hide" data-value="false">Show Less</a>
+							</settingoptions>
+						</div>
+
+						<ul id="defaultLibraries" class="libraryList row summary">
+						</ul>
+						<div id="defaultLibraryFade"></div>
+						<ul id="customLibraries" class="libraryList row">
+						</ul>
+														<!-- <a href="/membership/" target="_blank">Get Plus+</a> to add custom libraries -->
+																	<hr>
+									<div class="row extraTooltips">
+										<div class="col-xs-6">
+											<a href="https://www.openprocessing.org/sketch/180553#" data-tippy="" data-original-title="Console will automatically show up when there is an error or print() function in your code.">Where is console?</a>
+										</div>
+										<div class="col-xs-6 text-right">
+											<a href="https://www.openprocessing.org/sketch/180553#" data-tippy="" data-original-title="Save         command+s&lt;br/&gt;Full Screen    ctrl+alt+f&lt;br/&gt;Beautify Code    ctrl+b">Shortcuts</a>
+										</div>
+									</div>
+									<div class="adContainer hideIfMember">
+										<hr>
+										<a href="https://www.openprocessing.org/membership/" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;promo&#39;, &#39;click&#39;, &#39;dashboard&gt;privacy_features&#39;);">Join Plus+</a> for advanced code editor, no ads, custom libraries and more space.
+										<div id="carbonAdContainer">
+											<!-- design circle carbon -->
+										</div>
+									</div>
+
+									<!--<ul id="shortcuts" class="row">
+                                <h4 class="col-xs-12">Shortcuts</h4>
+                                <li class="col-xs-12">Info <shortcut>command+i</shortcut></li>
+                                <li class="col-xs-12">Run/Refresh <shortcut>command+r</shortcut></li>
+                                <li class="col-xs-12">Code <shortcut>command+c</shortcut></li>
+                                <li class="col-xs-12">Console <shortcut>option+c</shortcut></li>
+
+                            </ul>-->
+
+					</div>
+					<div role="tabpanel" class="tab-pane" id="sketchFiles">
+						Please save or fork the sketch before uploading any files.								<ul></ul>
+					</div>
+					
+					<div role="tabpanel" class="tab-pane" id="codeReference">
+						<input id="referenceFilter" type="text" tabindex="10000" placeholder="Find">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="commentSidePanel" class="sidePanel inactive hidden-xs container">
+		<div class="comments row">
+			<!-- comments go here via d3 -->
+		</div>
+		<div class="newCommentContainer row">
+			<div class="newComment">
+				<div class="textarea empty toTextarea toTextarea-placeholder" contenteditable="true" data-placeholder="what do you think?"></div>
+				<div class="buttonContainer">
+					<button type="button" class="btn btn-primary red ">Post</button>
+					<button type="button" class="btn btn-secondary ">Cancel</button>
+					<div class="small">*Use &lt;code&gt;&lt;/code&gt; for code snippets.</div>
+				</div>
+			</div>
+		</div>
+		<div id="cantComment" class="row">
+			<div class="col-xs-12">
+				<a href="https://www.openprocessing.org/sketch/180553#">Join OpenProcessing</a> to heart, comment or fork sketches.
+			</div>
+		</div>
+	</div>
+	<div id="heartSidePanel" class="sidePanel inactive hidden-xs container">
+		<ul id="heartsList" class="hearts col-sm-12 userList">
+
+		</ul>
+
+	</div>
+	<div id="forkSidePanel" class="sidePanel inactive hidden-xs container">
+		<div id="forkListHeader" class="row">
+			<div class="col-xs-4">
+				<div class="sketchThumbContainer">
+					<img src="./blank.png" data-src="https://s3.amazonaws.com/openprocessing-usercontent/thumbnails/visualThumbnail180553.jpg" class="sketchThumb hideUntilLoaded">
+				</div>
+			</div>
+			<div class="headerText col-xs-8">
+				RhythmPatternsFirstSec					<br> by
+					<span class="userName">
+						Elzie Crous					</span>
+			</div>
+
+		</div>
+		<div id="forkListContainer" class="row"></div>
+		<div id="noForkMessage" class="row text-center">
+			<p class="col-xs-12">No forks created yet.</p>
+		</div>
+		<div id="forkButtonContainer" class="row text-center">
+			<button type="button" id="forkThisSketchButton" data-loading-text="Creating Fork.." class="btn btn-primary red">Create a Fork</button>
+		</div>
+	</div>
+	<div id="shareSidePanel" class="sidePanel inactive hidden-xs container">
+		<div id="GIFPreview" class="row">
+			<div class="col-xs-12">
+				<div id="GIFProgress"></div>
+			</div>
+			<div id="animatedGIF"></div>
+			<a id="animatedGIFLink" class="col-xs-12 text-center hide" download="sketch180553.gif">Download</a>
+			<div class="col-xs-12">
+				<hr>
+			</div>
+
+			<div class="col-xs-offset-8 col-xs-4 text-center">
+				<span class="caret"></span>
+			</div>
+
+		</div>
+		<div id="shareLinks" class="row">
+			<div class="col-xs-4">
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.openprocessing.org/sketch/180553">
+					<span class="icon icon_facebook_white"></span> Facebook
+				</a>
+			</div>
+			<div class="col-xs-4 text-center">
+				<a target="_blank" href="https://twitter.com/home?status=Here%20is%20an%20awesome%20sketch%3A%0Ahttps%3A//www.openprocessing.org/sketch/180553">
+					<span class="icon icon_twitter_white"></span> Twitter
+				</a>
+			</div>
+			<div class="col-xs-4 text-right">
+				<a id="recordGifLink" target="_blank" data-loading-text="Rendering GIF.." href="javascript:;">
+					<span class="icon icon_record_small_white"></span> Create GIF</a>
+			</div>
+			<div class="col-xs-12">
+				<hr>
+			</div>
+		</div>
+
+		<div class="row" id="share_download">
+			<div class="col-xs-4">Download</div>
+			<div class="col-xs-8 text-right hideIfSourceCodeHidden">
+										<a href="https://www.openprocessing.org/home/signin?prevUrl=/sketch/180553" rel="nofollow">Sign in to Download</a>
+									</div>
+			<div class="col-xs-8 text-right showIfSourceCodeHidden">
+				Disabled (source code is hidden)
+
+			</div>
+		</div>
+				<div class="row" id="share_embed">
+			<div class="col-xs-4">Embed</div>
+			<div class="col-xs-8 text-right">
+				<a class="copyLink" href="https://www.openprocessing.org/sketch/180553#">Click to copy</a>
+			</div>
+			<div class="col-xs-12 description">
+				<pre class="copyContent" id="embedText" disabled="true">&lt;iframe src="https://www.openprocessing.org/sketch/180553/embed/" width="800" height="600"&gt;&lt;/iframe&gt;</pre>
+				<a href="https://www.openprocessing.org/sketch/180553#" target="_blank" class="icon icon_share_small white"></a>
+			</div>
+								<div id="plusEmbedOptions" class="col-xs-12 small">
+						<a href="https://www.openprocessing.org/membership/" target="_blank">Get Plus+ Membership</a> to access embedding options
+						<a href="https://www.openprocessing.org/sketch/180553#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Embedding options include removing the intro and navigation bar to embed in fullscreen. You can also embed private sketches.">
+							<span class="icon icon_question"></span>
+						</a>
+
+					</div>
+							</div>
+					<div class="row" id="share_attribute">
+				<div class="col-xs-4">Attribute</div>
+				<div class="col-xs-8 text-right">
+					<a class="copyLink" href="https://www.openprocessing.org/sketch/180553#">Click to copy</a>
+				</div>
+				<div class="col-xs-12 description">
+					<pre class="copyContent" id="attributionText" disabled="true">"RhythmPatternsFirstSec" by Elzie Crous
+http://www.openprocessing.org/sketch/180553
+Licensed under Creative Commons Attribution ShareAlike
+https://creativecommons.org/licenses/by-sa/3.0
+https://creativecommons.org/licenses/GPL/2.0/</pre>
+				</div>
+			</div>
+							</div>
+				
+
+				<div id="console" class="hidden-xs">
+					<div class="consolePin show">
+						<div></div>
+					</div>
+					<button type="button" class="icon icon_close white"></button>
+					<div id="consoleContent"></div>
+				</div>
+				<div id="iosKeyboardPin">
+				</div>
+
+
+
+				<!--    <div class="icon icon_fullscreen"></div>-->
+				<div class="modals">
+					<div id="messageModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="messageModal">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body message">
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default dark" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="signinModal" class="signinJoinPanel modal OPLiveForm fade">
+	<div class="modal_bg"></div>
+	<div class="icon icon_close visible-xs"></div>
+
+	<form id="signinForm" action="https://www.openprocessing.org/home/signinSubmit_ajax" method="POST">
+		<div class="icon icon_close visible-xs"></div>
+		<div class="row">
+			<h1 class="bariol col-xs-12 ">
+				Sign in			</h1>
+		</div>
+		<div class="row">
+			<p class="description col-xs-12"></p>
+		</div>
+		<div class="usernameField row hide">
+			<formitem class="col-xs-12">
+				<label for="signinModal_username">Username</label>
+				<input id="signinModal_username" class="username field edit" type="text" maxlength="35" name="username">
+			</formitem>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12">
+				<label for="signinModal_email">Email</label>
+				<input id="signinModal_email" class="email field edit" maxlength="60" type="email" required="" name="email">
+			</formitem>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12">
+				<label for="signinModal_password">Password</label>
+				<input id="signinModal_password" class="password field edit" type="password" required="" name="password">
+				<div class="recoverLink">
+					<a href="https://www.openprocessing.org/home/recover" target="_blank" class="text-right small">forgot?</a>
+				</div>
+			</formitem>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12 text-right">
+				<input id="signinModal_remember" class="remember field edit" type="checkbox" name="remember">
+				<label for="signinModal_remember">Stay signed in</label>
+
+			</formitem>
+		</div>
+		<div class="row">
+			<div class="buttons col-xs-12">
+				<div class="errorMessage"></div>
+				<button class="submitButton btn btn-primary" type="submit" href="/home/signin" data-loading-text="Signing in.." data-normal-text="Sign in" data-success-text="Signed in">Sign in</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<br>
+				<br>Don't have an account yet?
+				<br>
+				<a href="https://www.openprocessing.org/sketch/180553#" class="joinLink">Join OpenProcessing.</a>
+			</div>
+		</div>
+	</form>
+</div><div id="joinModal" class="signinJoinPanel modal OPLiveForm fade">
+	<div class="modal_bg"></div>
+	<form id="joinForm" action="https://www.openprocessing.org/home/joinSubmit_ajax" method="POST">
+		<div class="icon icon_close visible-xs"></div>
+		<div class="row">
+			<h1 class="bariol col-xs-12">Join OpenProcessing</h1>
+		</div>
+		<div class="row">
+			<p class="description col-xs-12"></p>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12 ">
+				<label for="joinModal_fullname">Name</label>
+				<input id="joinModal_fullname" required="" maxlength="42" minlength="2" type="text" class="field edit" name="fullname" label="name">
+			</formitem>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12 ">
+				<label for="joinModal_email">Email</label>
+				<input id="joinModal_email" maxlength="60" type="email" required="" class="field edit" name="email">
+			</formitem>
+		</div>
+		<div class="row">
+			<formitem class="col-xs-12">
+				<label for="joinModal_password">Password</label>
+				<input id="joinModal_password" type="password" required="" class="field edit" name="password">
+			</formitem>
+		</div>
+
+		<div class="row">
+			<formitem class="col-xs-12 text-right">
+				<input id="joinModal_remember" type="checkbox" class="field edit" name="remember">
+				<label for="joinModal_remember">Stay signed in</label>
+
+			</formitem>
+		</div>
+		<div class="row">
+			<div class="g-recaptcha col-xs-12" data-sitekey="6LcuPboSAAAAAJPyBeriOU1VrhEZfBVA8O_3fhFe" style="transform:scale(1.18);-webkit-transform:scale(1.18);transform-origin:0 0;-webkit-transform-origin:0 0; margin-bottom:15px"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 small">
+				<br> By clicking Join, you agree to the
+				<a href="https://www.openprocessing.org/home/tos/" target="_blank">Terms of Service</a>. </div>
+		</div>
+		<div class="row">
+			<div class="buttons col-xs-12">
+				<div id="joinModal_errorMessage" class="errorMessage"></div>
+				<button id="joinModal_submitButton" type="submit" href="/home/join" data-loading-text="Joining.." data-normal-text="Join" data-success-text="Joined" class="btn btn-primary ">Join</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<br>
+				<br>Have an account already?
+				<a href="https://www.openprocessing.org/sketch/180553#" class="signinLink">Sign in.</a>
+			</div>
+		</div>
+
+	</form>
+</div>
+						<div id="codeSnippetModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="codeSnippetLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"></span>
+										</button>
+										<h4 class="modal-title" id="codeSnippetLabel">Code Snippet</h4>
+									</div>
+									<div class="modal-body">
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="flagSketchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="flagSketchModal">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"></span>
+										</button>
+										<h4 class="modal-title">Report Sketch</h4>
+									</div>
+									<div class="modal-body">
+										Oh, that naughty sketch! Please let us know what the issue is below.
+									</div>
+									<div class="modal-footer">
+										<button type="button" data-type="spam" class="btn red btn-danger">This is inappropriate/spam</button>
+										<button type="button" data-type="copyright" class="btn red btn-danger">This is copyrighted material</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="flagCommentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="flagCommentModal">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close dark" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"></span>
+										</button>
+										<h4 class="modal-title">Report Comment</h4>
+									</div>
+									<div class="modal-body">
+										Oh, that naughty comment! Please let us know what the issue is below.
+									</div>
+									<div class="modal-footer">
+										<button type="button" data-loading="Submitting..." data-type="spam" class="btn red btn-danger" data-dismiss="modal">This is inappropriate/spam</button>
+										<button type="button" data-loading="Submitting..." data-type="copyright" class="btn red btn-danger">This is copyrighted material</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="deleteSketchModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteSketchModal">
+							<div class="modal-dialog modal-sm" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										Delete Sketch?
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default red" data-dismiss="modal">Cancel</button>
+										<button type="button" class="btn btn-primary red">Delete</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="deleteCommentModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteCommentModal">
+							<div class="modal-dialog modal-sm" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										Delete Comment?
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default red" data-dismiss="modal">Cancel</button>
+										<button type="button" class="btn btn-primary red">Delete</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="deleteTabModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteTabModal">
+							<div class="modal-dialog modal-sm" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+										Delete this tab? Any code in it will be deleted as well.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default red" data-dismiss="modal">Cancel</button>
+										<button type="button" class="btn btn-primary red">Delete Tab</button>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+
+				
+				<!--    empty and fake div to allow hack sketches work-->
+				<div id="appletAjaxContainer"></div>
+
+				<!--commented to load local
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+				<script>
+					var sketch = {"title":"RhythmPatternsFirstSec","isPjs":"1","mode":1,"description":"Rhythm pattern  - eighth and quarter notes.","instructions":null,"baseFolder":"assets\/visuals1","width":"0","height":"0","path":"","tags":[],"license":"by-sa","isOpenGL":"0","imports":"","active":"1","isDraft":"0","isPrivate":"0","hideSourceCode":"1","url":"RhythmPatternsFirstSec.pde","createdOn":"2015-01-11 18:54:17","updatedOn":null,"filesUpdatedOn":"2015-01-11 15:54:17","thumbnailUpdatedOn":"2015-01-11 15:55:28","parentID":null,"engineID":"10","codeObjects":[],"visualID":"180553","userID":"44568","newSketch":false,"comments":[],"hearts":[],"numberOfViews":"293","hits":"293","classes":[],"engineUrl":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/processingjsReleases\/processing-1.4.8.js","versions":[{"visualID":"180553","versionID":"180553","createdOn":"2015-01-11 15:54:17","updatedOn":"2015-01-11 10:54:17","isRestore":"0","codeObjects":[{"visualCodeID":"140529","visualID":"180553","code":"float z = 800;\nfloat x = 0;\nfloat xx = -100;\nfloat xxx = -200;\nfloat xxxx = -300;\nfloat a = -400; \nfloat b = -500;\nfloat c = -600;\nfloat d = -650;\nfloat e = -700;\nfloat eaa = -750;\nfloat aa = -800; \nfloat bb = -900;\nfloat cc = -1000;\nfloat dd = -1050;\nfloat ee = -1100;\nfloat eef = -1150;\nfloat f = -1200;\nfloat g = -1300;\nfloat h = -1350;\nfloat i = -1400;\nfloat j = -1500;\nfloat jff = -1550;\n \nfloat ff = -1600;\nfloat gg = -1700;\nfloat hh = -1750;\nfloat ii = -1800;\nfloat jj = -1900;\nfloat jk = -1950;\n\nfloat k = -2000;\nfloat l = -2050;\nfloat m = -2100;\nfloat n = -2200;\nfloat o = -2250;\nfloat p = -2300;\nfloat pk = -2350;\nfloat kk = -2400;\nfloat ll = -2450;\nfloat mm = -2500;\nfloat nn = -2600;\nfloat oo = -2650;\nfloat pp = -2700;\nfloat ppq = -2750;\nfloat q = -2800;\nfloat r = -2850;\nfloat s = -2900;\nfloat t = -2950;\nfloat u = -3000;\nfloat uqq = -3100;\nfloat qq = -3200;\nfloat rr = -3250;\nfloat ss = -3300;\nfloat tt = -3350;\nfloat uu = -3400;\nfloat uuu = -3500;\nfloat uuuu = -3505;\n\nfloat r1 = 25;\nfloat r2 = 25; \nfloat r3 = 25;\nfloat r4 = 25;\nfloat r5 = 25;\nfloat r6 = 25;\nfloat r7 = 25; \nfloat r8 = 25;\nfloat r9 = 25;\nfloat r10 = 25;\n\nfloat r11 = 25;\nfloat r12 = 25; \nfloat r13 = 25;\nfloat r14 = 25;\nfloat r15 = 25;\nfloat r16 = 25;\nfloat r17 = 25; \nfloat r18 = 25;\nfloat r19 = 25;\nfloat r20 = 25;\n\nfloat r21 = 25;\nfloat r22 = 25; \nfloat r23 = 25;\nfloat r24 = 25;\nfloat r25 = 25;\nfloat r26 = 25;\nfloat r27 = 25; \nfloat r28 = 25;\nfloat r29 = 25;\nfloat r30 = 25;\nfloat r31 = 25;\nfloat r32 = 25;\n\nfloat r31 = 25;\nfloat r32 = 25; \nfloat r33 = 25;\nfloat r34 = 25;\nfloat r35 = 25;\nfloat r36 = 25;\nfloat r37 = 25; \nfloat r38 = 25;\nfloat r39 = 25;\nfloat r40 = 25;\nfloat r41 = 25;\nfloat r42 = 25;\n\nvoid setup() {\n  size(800, 600);\n}\n\nvoid draw() {\n  background(175, 238, 238);\n  fill(0, 153,0);\n  noStroke();\n  rect(z, 50, 100, 50);\n  rect(z + 50, 20, 50, 30);\n  fill(255, 255, 51);\n  rect (280, 450, 140, 100);\n  fill(255, 0, 0);\n  triangle(350, 350, 250, 450, 450, 450);\n  fill(255);\n  strokeWeight(3);\n  stroke(0);\n  rect(300, 460, 30, 30);\n  noStroke();\n  fill(0);\n  ellipse(z +20, 110, 20, 20);\n  ellipse(z+80, 110, 20, 20);\n  ellipse(z+144, 110, 20, 20);\n  ellipse (z+204, 110, 20, 20);\n  ellipse (z+254, 110, 20, 20);\n  ellipse (z+314, 110, 20, 20);\n  fill(255);\n  rect(z+70, 30, 20, 20);\n  if (z == -50) {\n    z = 800;\n  }\n  fill(255, 255, 51);\n  rect(z+120, 50, 100, 50);\n  fill(255,0,0);\n  rect (z+240, 50, 100,50);\n  textFont(createFont(\"cursive\"));\n  textSize(45);\n  fill(0);\n  text(\"1\",x, 250);\n  text(\"2\", xx, 250);\n  text(\"3\", xxx, 250);\n  text(\"4\", xxxx, 250);\n  strokeWeight(1);\n stroke(0); \nellipse(a, 250, r1, r1);\nellipse(b, 250, r2, r2);\nellipse(c, 250, r3, r3);\nellipse(d, 250, r4, r4);\nellipse(e,250, r5, r5);\nline(a+12.5, 250, a+12.5, 190);\nline(b+12.5, 250, b+12.5, 190);\nline(c+12.5, 250, c+12.5, 190);\nline(d+12.5, 250, d+12.5, 190);\nline(c+12.5, 190, d+12.5, 190);\nline(e+12.5, 250, e+12.5, 190);\n\n\nellipse(aa, 250, r6, r6);\nellipse(bb, 250, r7, r7);\nellipse(cc, 250, r8, r8);\nellipse(dd, 250, r9, r9);\nellipse(ee,250, r10, r10);\nline(aa+12.5, 250, aa+12.5, 190);\nline(bb+12.5, 250, bb+12.5, 190);\nline(cc+12.5, 250, cc+12.5, 190);\nline(dd+12.5, 250, dd+12.5, 190);\nline(cc+12.5, 190, dd+12.5, 190);\nline(ee+12.5, 250, ee+12.5, 190);\nstroke(255,0,0);\nfill(255, 0, 0);\nellipse(f, 250, r11, r11);\nellipse(g, 250, r12, r12);\nellipse(h, 250, r13, r13);\nellipse(i, 250, r14, r14);\nellipse(j,250, r15, r15);\nline(f+12.5, 250, f+12.5, 190);\nline(g+12.5, 250, g+12.5, 190);\nline(h+12.5, 250, h+12.5, 190);\nline(g+12.5, 190, h+12.5, 190);\nline(i+12.5, 250, i+12.5, 190);\nline(j+12.5, 250, j+12.5, 190);\n\nellipse(ff, 250, r16, r16);\nellipse(gg, 250, r17, r17);\nellipse(hh, 250, r18, r18);\nellipse(ii, 250, r19, r19);\nellipse(jj,250, r20, r20);\nline(ff+12.5, 250, ff+12.5, 190);\nline(gg+12.5, 250, gg+12.5, 190);\nline(hh+12.5, 250, hh+12.5, 190);\nline(gg+12.5, 190, hh+12.5, 190);\nline(ii+12.5, 250, ii+12.5, 190);\nline(jj+12.5, 250, jj+12.5, 190);\nfill(0, 0, 205);\nstroke(0, 0, 205);\nellipse(k, 250, r21, r21);\nellipse(l, 250, r22, r22);\nellipse(m, 250, r23, r23);\nellipse(n, 250, r24, r24);\nellipse(o,250, r25, r25);\nellipse(p, 250, r42, r42);\nellipse(kk, 250, r26, r26);\nellipse(ll, 250, r27, r27);\nellipse(mm, 250, r28, r28);\nellipse(nn, 250, r29, r29);\nellipse(oo,250, r30, r30);\nellipse(pp, 250, r41, r41);\nline(k+12.5, 250, k+12.5, 190);\nline(l+12.5, 250, l+12.5, 190);\nline(l+12.5, 190, k+12.5,190);\nline(m+12.5, 250, m+12.5, 190);\nline(n+12.5, 250, n+12.5, 190);\nline(o+12.5, 250, o+12.5, 190);\nline(n+12.5, 190, o+12.5, 190);\nline(p+12.5, 250, p+12.5, 190);\nline(kk+12.5, 250, kk+12.5, 190);\nline(ll+12.5, 250, ll+12.5, 190);\nline(kk+12.5, 190, ll+12.5, 190);\nline(mm+12.5, 250, mm+12.5, 190);\nline(nn+12.5, 250, nn+12.5, 190);\nline(oo+12.5, 250, oo+12.5, 190);\nline(nn+12.5, 190, oo+12.5, 190);\nline(pp+12.5, 250, pp+12.5, 190);\nfill(76, 0, 153);\nstroke(76, 0, 153);\nellipse(q, 250, r31, r31);\nellipse(r, 250, r32, r32);\nellipse(s, 250, r33, r33);\nellipse(t, 250, r34, r34);\nnoFill();\nstrokeWeight(4);\nellipse(u,250, r35, r35);\nfill(76, 0, 153);\nellipse(qq, 250, r36, r36);\nellipse(rr, 250, r37, r37);\nellipse(ss, 250, r38, r38);\nellipse(tt, 250, r39, r39);\nnoFill();\nstrokeWeight(4);\nellipse(uu,250, r40, r40);\nstrokeWeight(1);\nline(q+12.5, 250, q+12.5, 190);\nline(r+12.5, 250, r+12.5, 190);\nline(q+12.5, 190, r+12.5, 190);\nline(s+12.5, 250, s+12.5, 190);\nline(t+12.5, 250, t+12.5, 190);\nline(s+12.5, 190, t+12.5, 190);\nline(u+12.5, 250, u+12.5, 190);\nline(qq+12.5, 250, qq+12.5, 190);\nline(rr+12.5, 250, rr+12.5, 190);\nline(qq+12.5, 190, rr+12.5, 190);\nline(ss+12.5, 250, ss+12.5, 190);\nline(tt+12.5, 250, tt+12.5, 190);\nline(ss+12.5, 190, tt+12.5, 190);\nline(uu+12.5, 250, uu+12.5, 190);\nstrokeWeight(.5);\nline(eaa, 255, eaa, 185);\nline(eef, 255, eef, 185);\nline(jff, 255, jff, 185);\nline(jk, 255, jk, 185);\nline(pk, 255, pk, 185);\nline(uqq, 255, uqq, 185);\nline(uuu, 255, uuu, 185);\nline(uuuu, 255, uuuu, 185);\nline(ppq, 255, ppq, 185);\nuuuu = uuuu+2;\nuuu = uuu+2;\nuqq = uqq+2;\nppq = ppq+2;\nz = z-1;\npk = pk+2;\n jk = jk+2;\n jff = jff+2;\n eef = eef+2;\n  eaa = eaa+2;\n  x = x+2;\n  xx = xx + 2;\n  xxx = xxx + 2;\n  xxxx = xxxx + 2;\n  a = a+2;\n  b = b+2;\n  c = c+2;\n  d = d+2;\n  e = e+2;\n  \n  aa = aa+2;\n  bb = bb+2;\n  cc = cc+2;\n  dd = dd+2;\n  ee = ee+2;\n  f = f+2;\n  g = g+2;\n  h = h+2;\n  i = i+2;\n  j = j+2;\n  \n  ff = ff+2;\n  gg = gg+2;\n  hh = hh+2;\n  ii = ii+2;\n  jj = jj+2;\n  \n  k = k+2;\n  l = l+2;\n  m = m+2;\n  n = n+2;\n  o = o+2;\n  p = p+2;\n  \n  kk = kk+2;\n  ll = ll+2;\n  mm = mm+2;\n  nn = nn+2;\n  oo = oo+2;\n  pp = pp+2;\n  \n  q = q+2;\n  r = r+2;\n  s = s+2;\n  t = t+2;\n  u = u+2;\n  qq = qq+2;\n  rr = rr+2;\n  ss = ss+2;\n  tt = tt+2;\n  uu = uu+2;\n\n  if (a == 300) {\n    r1 = r1*1.5;\n  }\n  \n  if (a == 330) {\n    r1 = 25;\n  }\n   if (b == 300) {\n    r2 = r2*1.5;\n  }\n  \n  if (b == 330) {\n    r2 = 25;\n  }\n   if (c == 300) {\n    r3 = r3*1.5;\n  }\n  \n  if (c == 330) {\n    r3 = 25;\n  }\n   if (d == 300) {\n    r4 = r4*1.5;\n  }\n  \n  if (d == 330) {\n    r4 = 25;\n  }\n  if (e == 300) {\n    r5 = r5*1.5;\n  }\n  \n  if (e == 330) {\n    r5 = 25;\n  }\n  \n  if (aa == 300) {\n    r6 = r6*1.5;\n  }\n  \n  if (aa == 330) {\n    r6 = 25;\n  }\n   if (bb == 300) {\n    r7 = r7*1.5;\n  }\n  \n  if (bb == 330) {\n    r7 = 25;\n  }\n   if (cc == 300) {\n    r8 = r8*1.5;\n  }\n  \n  if (cc == 330) {\n    r8 = 25;\n  }\n   if (dd == 300) {\n    r9 = r9*1.5;\n  }\n  \n  if (dd == 330) {\n    r9 = 25;\n  }\n  if (ee == 300) {\n    r10 = r10*1.5;\n  }\n  \n  if (ee == 330) {\n    r10 = 25;\n  }\n  \n  if (f == 300) {\n    r11 = r11*1.5;\n  }\n  \n  if (f == 330) {\n    r11 = 25;\n  }\n   if (g == 300) {\n    r12 = r12*1.5;\n  }\n  \n  if (g == 330) {\n    r12 = 25;\n  }\n   if (h == 300) {\n    r13 = r13*1.5;\n  }\n  \n  if (h == 330) {\n    r13 = 25;\n  }\n   if (i == 300) {\n    r14 = r14*1.5;\n  }\n  \n  if (i == 330) {\n    r14 = 25;\n  }\n  if (j == 300) {\n    r15 = r15*1.5;\n  }\n  \n  if (j == 330) {\n    r15 = 25;\n  }\n  \n  if (ff == 300) {\n    r16 = r16*1.5;\n  }\n  \n  if (ff == 330) {\n    r16 = 25;\n  }\n   if (gg == 300) {\n    r17 = r17*1.5;\n  }\n  \n  if (gg == 330) {\n    r17 = 25;\n  }\n   if (hh == 300) {\n    r18 = r18*1.5;\n  }\n  \n  if (hh == 330) {\n    r18 = 25;\n  }\n   if (ii == 300) {\n    r19 = r19*1.5;\n  }\n  \n  if (ii == 330) {\n    r19 = 25;\n  }\n  if (jj == 300) {\n    r20 = r20*1.5;\n  }\n  \n  if (jj == 330) {\n    r20 = 25;\n  }\n  \n  if (k == 300) {\n    r21 = r21*1.5;\n  }\n  \n  if (k == 330) {\n    r21 = 25;\n  }\n   if (l == 300) {\n    r22 = r22*1.5;\n  }\n  \n  if (l == 330) {\n    r22 = 25;\n  }\n   if (m == 300) {\n    r23 = r23*1.5;\n  }\n  \n  if (m == 330) {\n    r23 = 25;\n  }\n   if (n == 300) {\n    r24 = r24*1.5;\n  }\n  \n  if (n == 330) {\n    r24 = 25;\n  }\n  if (o == 300) {\n    r25 = r25*1.5;\n  }\n  \n  if (o == 330) {\n    r25 = 25;\n  }\n  if (p == 300) {\n    r42 = r42*1.5;\n  }\n  \n  if (p == 330) {\n    r42 = 25;\n  }\n  \n  if (kk == 300) {\n    r26 = r26*1.5;\n  }\n  \n  if (kk == 330) {\n    r26 = 25;\n  }\n   if (ll == 300) {\n    r27 = r27*1.5;\n  }\n  \n  if (ll == 330) {\n    r27 = 25;\n  }\n   if (mm == 300) {\n    r28 = r28*1.5;\n  }\n  \n  if (mm == 330) {\n    r28 = 25;\n  }\n   if (nn == 300) {\n    r29 = r29*1.5;\n  }\n  \n  if (nn == 330) {\n    r29 = 25;\n  }\n  if (oo == 300) {\n    r30 = r30*1.5;\n  }\n  \n  if (oo == 330) {\n    r30 = 25;\n  }\n  if (pp == 300) {\n    r41 = r41*1.5;\n  }\n  \n  if (pp == 330) {\n    r41 = 25;\n  }\n  if (q == 300) {\n    r31 = r31*1.5;\n  }\n  \n  if (q == 330) {\n    r31 = 25;\n  }\n   if (r == 300) {\n    r32 = r32*1.5;\n  }\n  \n  if (r == 330) {\n    r32 = 25;\n  }\n   if (s == 300) {\n    r33 = r33*1.5;\n  }\n  \n  if (s == 330) {\n    r33 = 25;\n  }\n  if (t == 300) {\n    r34 = r34*1.5;\n  }\n  \n  if (t == 330) {\n    r34 = 25;\n  }\n  if (u == 300) {\n    r35 = r35*1.5;\n  }\n  \n  if (u == 380) {\n    r35 = 25;\n  }\n  if (qq == 300) {\n    r36 = r36*1.5;\n  }\n  \n  if (qq == 330) {\n    r36 = 25;\n  }\n   if (rr == 300) {\n    r37 = r37*1.5;\n  }\n  \n  if (rr == 330) {\n    r37 = 25;\n  }\n   if (ss == 300) {\n    r38 = r38*1.5;\n  }\n  \n  if (ss == 330) {\n    r38 = 25;\n  }\n  if (tt == 300) {\n    r39 = r39*1.5;\n  }\n  \n  if (tt == 330) {\n    r39 = 25;\n  }\n  if (uu == 300) {\n    r40 = r40*1.5;\n  }\n  \n  if (uu == 380) {\n    r40 = 25;\n  }\n  \n  if(mousePressed) {\n z = 800;\n x = 0;\n xx = -100;\n xxx = -200;\n xxxx = -300;\n a = -400; \n b = -500;\n c = -600;\n d = -650;\n e = -700;\n eaa = -750;\n aa = -800; \n bb = -900;\n cc = -1000;\n dd = -1050;\nee = -1100;\n eef = -1150;\n f = -1200;\n g = -1300;\n h = -1350;\n i = -1400;\n j = -1500;\n jff = -1550;\n \n ff = -1600;\n gg = -1700;\n hh = -1750;\n ii = -1800;\n jj = -1900;\n jk = -1950;\n\n k = -2000;\n l = -2050;\n m = -2100;\n n = -2200;\n o = -2250;\n p = -2300;\n pk = -2350;\n kk = -2400;\n ll = -2450;\n mm = -2500;\n nn = -2600;\n oo = -2650;\n pp = -2700;\n ppq = -2750;\n q = -2800;\n r = -2850;\n s = -2900;\n t = -2950;\n u = -3000;\n uqq = -3100;\n qq = -3200;\n rr = -3250;\n ss = -3300;\n tt = -3350;\n uu = -3400;\n uuu = -3500;\n uuuu = -3505;\n  }\n  \n}\n\n","title":"RhythmPatternsFirstSec","updatedOn":"2018-04-11 08:10:57","versionID":"180553","createdOn":"2015-01-11 18:54:17"}]}],"licenseObject":{"acronym":"by-sa","name":"Creative Commons Attribution ShareAlike","short":"Attribution ShareAlike","url":"https:\/\/creativecommons.org\/licenses\/by-sa\/3.0"}};
+					var user = {"userID":"44568","fullname":"Elzie Crous","description":null,"memberSince":"2014-11-16 11:48:48","memberSince2":null,"website":"","location":"","active":"1","membershipType":"0","userType":"0","classes":[]};
+					var libraries = [{"libraryID":"1","title":"p5.dom","version":"0.2.11","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.2\/addons\/p5.dom.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","custom":false},{"libraryID":"2","title":"p5.sound","version":"0.3.0","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.2\/addons\/p5.sound.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","custom":false},{"libraryID":"3","title":"p5.collide2d","version":"0.1","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/p5.collide2D-0.1\/p5.collide2d.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","custom":false},{"libraryID":"4","title":"Leap Motion Controller","version":"0.6.4","for":"2","description":"Leap Motion allows you to use your hands as an input.","url":"https:\/\/js.leapmotion.com\/leap-0.6.4.min.js","docUrl":"https:\/\/js.leapmotion.com\/leap-0.6.4.min.js","custom":false},{"libraryID":"6","title":"p5.serial","version":"0.0.1","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/p5.serialport-0.0.1\/lib\/p5.serialport.js","docUrl":"https:\/\/github.com\/vanevery\/p5.serialport","custom":false},{"libraryID":"7","title":"p5.geolocation","version":"0.5","for":"2","description":"p5.geolocation provides techniques for acquiring, watching, calculating, and geofencing user locations for p5.js.","url":"https:\/\/cdn.rawgit.com\/bmoren\/p5.geolocation\/0.5\/p5.geolocation.js","docUrl":"https:\/\/github.com\/bmoren\/p5.geolocation","custom":false},{"libraryID":"8","title":"SocketIO","version":"1.4.5","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><br><a href=\"https:\/\/medium.com\/@openprocessing\/collaborative-sketches-1643d9751777\" target=\"_blank\">Learn more<\/a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","url":"https:\/\/cdn.socket.io\/socket.io-1.4.5.js","docUrl":"http:\/\/socket.io\/","custom":false},{"libraryID":"9","title":"p5js","version":"0.5.2","for":null,"description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.2\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"10","title":"pjs","version":"1.4.8","for":null,"description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/processingjsReleases\/processing-1.4.8.js","docUrl":"","custom":false},{"libraryID":"11","title":"p5js","version":"0.5.7","for":null,"description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.7\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"13","title":"p5.dom","version":"0.3.1","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.7\/addons\/p5.dom.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","custom":false},{"libraryID":"14","title":"p5.sound","version":"0.3.2","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsReleases\/p5-release-0.5.7\/addons\/p5.sound.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","custom":false},{"libraryID":"15","title":"p5.serial","version":"0.0.21","for":"2","description":"","url":"https:\/\/www.openprocessing.org\/assets\/js\/vendor\/p5jsLibraries\/p5.serialport-0.0.21\/lib\/p5.serialport.js","docUrl":"https:\/\/github.com\/vanevery\/p5.serialport","custom":false},{"libraryID":"16","title":"Rita.js","version":"1.1.51","for":"2","description":"An easy-to-use toolkit for experiments in natural language and generative literature.","url":"https:\/\/cdn.rawgit.com\/dhowe\/RiTaJS\/v1.1.51\/dist\/rita-full.min.js","docUrl":"https:\/\/github.com\/dhowe\/RiTaJS","custom":false},{"libraryID":"17","title":"p5.speech","version":"0.0.1","for":"2","description":"A library that provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen. Try <code>var foo = new p5.Speech();   foo.speak('hi there');<\/code>","url":"https:\/\/cdn.rawgit.com\/IDMNYU\/p5.js-speech\/1aad7da9\/lib\/p5.speech.js","docUrl":"http:\/\/ability.nyu.edu\/p5.js-speech\/","custom":false},{"libraryID":"18","title":"p5.bots","version":"0.3.2","for":"2","description":"","url":"https:\/\/cdn.rawgit.com\/sarahgp\/p5bots\/38402124\/lib\/p5bots.min.js","docUrl":"https:\/\/github.com\/sarahgp\/p5bots","custom":false},{"libraryID":"19","title":"SocketIO","version":"1.7.3","for":"2","description":"SocketIO allows you to connect to a socket connection to make multiple sketches speak in realtime. To use OpenProcessing Echo Socket Server, you can use the code below: <br><code> var socket = io.connect(\":30000?sketch={{sketch.visualID}}\");<\/code><br><a href=\"https:\/\/www.openprocessing.org\/sketch\/422520\" target=\"_blank\">See an example<\/a>","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/socket.io\/1.7.3\/socket.io.min.js","docUrl":"http:\/\/socket.io\/","custom":false},{"libraryID":"20","title":"p5js","version":"0.5.8","for":null,"description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.8\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"21","title":"p5js","version":"0.5.11","for":null,"description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.11\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"22","title":"p5.dom","version":"0.3.3","for":"2","description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.11\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","custom":false},{"libraryID":"23","title":"p5.play","version":"1.1cff5bd","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","url":"https:\/\/cdn.rawgit.com\/molleindustria\/p5.play\/1cff5bd\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","custom":false},{"libraryID":"24","title":"p5js","version":"0.5.16","for":null,"description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.16\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"25","title":"p5.dom","version":"0.3.4","for":"2","description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.16\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","custom":false},{"libraryID":"26","title":"p5.sound","version":"0.3.5","for":"2","description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.5.16\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","custom":false},{"libraryID":"27","title":"p5.play","version":"2.7bf47a7","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","url":"https:\/\/cdn.rawgit.com\/molleindustria\/p5.play\/7bf47a7\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","custom":false},{"libraryID":"28","title":"p5js","version":"0.6.0","for":null,"description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.6.0\/p5.min.js","docUrl":"https:\/\/github.com\/processing\/p5.js\/","custom":false},{"libraryID":"29","title":"p5.dom","version":"0.6.0 (p5)","for":"2","description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.6.0\/addons\/p5.dom.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.dom","custom":false},{"libraryID":"30","title":"p5.sound","version":"0.6.0 (p5)","for":"2","description":"","url":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/p5.js\/0.6.0\/addons\/p5.sound.min.js","docUrl":"http:\/\/p5js.org\/reference\/#\/libraries\/p5.sound","custom":false},{"libraryID":"31","title":"p5.play","version":"3.42cd19","for":"2","description":"p5.play is a p5.js library for the creation of games and playthings.","url":"https:\/\/cdn.rawgit.com\/molleindustria\/p5.play\/42cd19c3\/lib\/p5.play.js","docUrl":"http:\/\/p5play.molleindustria.org\/","custom":false},{"libraryID":"32","title":"p5.easycam","version":"1.0.9","for":"2","description":"Simple 3D camera control.","url":"https:\/\/cdn.rawgit.com\/diwi\/p5.EasyCam\/1.0.9\/p5.easycam.min.js","docUrl":"https:\/\/github.com\/diwi\/p5.EasyCam","custom":false},{"libraryID":"33","title":"ML5js","version":"0.0.3","for":"2","description":"Friendly machine learning library","url":"https:\/\/unpkg.com\/ml5@0.0.3\/dist\/ml5.js","docUrl":"https:\/\/ml5js.org","custom":false},{"libraryID":"34","title":"ML5js","version":"0.0.5","for":"2","description":"Friendly machine learning library","url":"https:\/\/unpkg.com\/ml5@0.0.5\/dist\/ml5.js","docUrl":"https:\/\/ml5js.org","custom":false},{"libraryID":"35","title":"p5.collide2d","version":"0.5","for":"2","description":"This library allows easy collision detection for variety of shapes, which lets you detect when shapes overlap on canvas.","url":"https:\/\/cdn.rawgit.com\/bmoren\/p5.collide2D\/v0.5\/p5.collide2d.min.js","docUrl":"https:\/\/github.com\/bmoren\/p5.collide2D","custom":false},{"libraryID":"36","title":"ML5js","version":"0.0.8","for":"2","description":"Friendly machine learning library","url":"https:\/\/unpkg.com\/ml5@0.0.8\/dist\/ml5.min.js","docUrl":"https:\/\/ml5js.org","custom":false}];
+					var embedPage = false;
+				</script>
+				<!--commented to load local
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+    <script>
+                  var sessionUser = {"userID":"0","fullname":"Guest User","description":null,"memberSince":null,"memberSince2":null,"website":"","location":"","active":"1","membershipType":"0","userType":"0","classes":[],"curations":[]};
+          if(sessionUser.membershipType == 1 || sessionUser.membershipType == 2 || sessionUser.userType == 2){
+            sessionUser.intercomHash = "ece1281545b6b1fe9ae3cb23f0078a70e244035ce197b5d56a9f96ebd7217801";
+          }
+                publishableKey = "pk_G0rby8OF2LKou3XdGx1fBSRYnV2c7";
+        backendMessage = "";     </script>
+            <script src="./jquery.min.js"></script>
+        <script src="./modernizr.min.js"></script>
+        <script src="./bootstrap.min.js"></script>
+        <script src="./moment.min.js"></script>
+        <script src="./moment-timezone-with-data.min.js"></script>
+        <script src="./underscore.js"></script>
+        <script src="./jquery.toTextarea.js"></script>
+    <script src="./jquery.unveil.js"></script>
+	<script src="./d3.v3.min.js"></script>
+	<script src="./jquery.form.min.js"></script>
+    <script src="./openprocessing.js"></script>
+    <script src="./signin_modal.js"></script>
+<!--GA is moved to head.php-->
+					<script src="./sketch_engine.js"></script>
+					<script src="./sketch_console.js"></script>
+					<script src="./sketch_versions.js"></script>
+					<script src="./sketch_view.js"></script>
+					
+
+
+
+							<script src="./mousetrap.min.js"></script>
+							<script src="./codemirror.js"></script>
+							<script src="./javascript.js"></script>
+							<script src="./brace-fold.js"></script>
+							<script src="./comment-fold.js"></script>
+							<script src="./foldcode.js"></script>
+							<script src="./foldgutter.js"></script>
+							<script src="./indent-fold.js"></script>
+							<script src="./comment.js"></script>
+							<script src="./continuecomment.js"></script>
+							<script src="./sublime.js"></script>
+							<script src="./diff.min.js"></script>
+							<script src="./beautify.min.js"></script>
+
+							<script src="./dropzone.js"></script>
+							<script src="./gif.js"></script>
+							<script src="./tippy.min.js"></script>
+
+							<!--            <script src="/assets/js/vendor/gif.js-master/dist/gif.worker.js"></script>-->
+
+
+</body></html>
